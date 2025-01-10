@@ -1,0 +1,201 @@
+{
+    "characterInfo": {
+        "name": "Flavia",
+        "role": 0,
+        "faction": 1,
+        "stats": {
+            "armor": 45,
+            "armorRegen": 0,
+            "movementSpeed": 60,
+            "stringifiedMovementSpeed": 66,
+            "stringifiedDmgRedRatio": 36,
+            "downTime": 15,
+            "revivalTimeWhileDown": 4
+        }
+    },
+    "weaponInfo": {
+        "name": "Solo",
+        "rateOfFire": 870,
+        "adsSpeed": 56,
+        "accuracy": 72,
+        "handling": 70,
+        "magazineCapacity": 25,
+        "reloadSpeed": 24,
+        "rechamberingSpeed": 0,
+        "stringifiedDamage": 64,
+        "maxScopeZoom": 1.25,
+        "damage": {
+            "head": {
+                "tenMeters": 26,
+                "thirtyMeters": 18,
+                "fiftyMeters": 18
+            },
+            "body": {
+                "tenMeters": 21,
+                "thirtyMeters": 15,
+                "fiftyMeters": 14
+            },
+            "legs": {
+                "tenMeters": 14,
+                "thirtyMeters": 10,
+                "fiftyMeters": 10
+            }
+        }
+    },
+    "abilities": {
+        "active": {
+            "name": "Phantom Mirage",
+            "description": "When Flavia takes HP damage, she briefly transforms into a phantom butterfly, becoming untargetable and unable to attack. She also summons a Phantom Orb at her location that obstructs enemy vision but can be destroyed.",
+            "detailedStats": {
+                "cooldown": 25,
+                "buffDuration": 5,
+                "butterflyDuration": 2,
+                "orbHealth": 100,
+                "orbDuration": 3
+            },
+            "additionalInfo": [
+                "Cooldown: 25 seconds",
+                "Buff Duration: 5 seconds",
+                "Butterfly Duration: 2 seconds",
+                "Orb Health: 100hp",
+                "Orb Duration: 3 seconds"
+            ]
+        },
+        "passive": {
+            "name": "Retribution",
+            "description": "Flavia's active skill CD reduces when she takes DMG. Upon taking significant DMG, she gains temporary ultimate points, valid for the current round.",
+            "detailedStats": {
+                "ultimatePointGainDemolition": -1,
+                "ultimatePointGainEscort": -1
+            },
+            "additionalInfo": []
+        },
+        "ultimate": {
+            "name": "Phantom Flutter",
+            "description": "Flavia generates a Phantom Zone at her location. Within the zone, enemy fatal attacks trigger her brief butterfly transformation, allowing her to evade death and reform after a short period to continue fighting. Enemies outside the zone ignore this effect but can see Flavia only if she attacks first.",
+            "detailedStats": {
+                "costDemolition": 6,
+                "costEscort": -1,
+                "zoneDuration": 10,
+                "butterflyDuration": 4
+            },
+            "additionalInfo": [
+                "Zone Duration: 10 seconds",
+                "Butterfly Duration: 4 seconds"
+            ]
+        }
+    },
+    "upgrades": {
+        "blue1": {
+            "name": "Firing",
+            "choice1": {
+                "name": "+Base Damage",
+                "cost": 150
+            },
+            "choice2": {
+                "name": "+Base Rate of Fire",
+                "cost": 150
+            }
+        },
+        "blue2": {
+            "name": "Critical Hit",
+            "choice1": {
+                "name": "+Headshot Damage",
+                "cost": 150
+            },
+            "choice2": {
+                "name": "+Stringified Damage",
+                "cost": 150
+            }
+        },
+        "blue3": {
+            "name": "Capacity",
+            "choice1": {
+                "name": "+Magazine Capacity",
+                "cost": 150
+            },
+            "choice2": {
+                "name": "+Reload Speed",
+                "cost": 150
+            }
+        },
+        "blue4": {
+            "name": "Accuracy",
+            "choice1": {
+                "name": "+Spread Control",
+                "cost": 150
+            },
+            "choice2": {
+                "name": "+Recoil Handling",
+                "cost": 150
+            }
+        },
+        "yellow1": {
+            "name": "Phantom Mirage",
+            "choice1": {
+                "name": "Butterfly Duration +2s",
+                "cost": 250
+            },
+            "choice2": {
+                "name": "Phantom Orb HP + 50%",
+                "cost": 250
+            }
+        },
+        "yellow2": {
+            "name": "Retribution",
+            "choice1": {
+                "name": "-20% DMG Required to Reduce CD",
+                "cost": 250
+            }
+        },
+        "green1": {
+            "name": "Armor",
+            "choice1": {
+                "name": "Light Regen Armor",
+                "cost": 250
+            },
+            "choice2": {
+                "name": "Heavy Armor",
+                "cost": 250
+            }
+        },
+        "green2": {
+            "name": "Survivability",
+            "choice1": {
+                "name": "Stringified Movement SPD +15%",
+                "cost": 250
+            },
+            "choice2": {
+                "name": "Stringified DMG Reduction +25%",
+                "cost": 250
+            }
+        }
+    },
+    "awakenings": [
+        {
+            "name": "Fantasy Rebirth",
+            "description": "After summoning a Phantom Orb, Flavia regenerates HP over time.",
+            "detailedStats": {
+                "totalHealing": 50
+            },
+            "cost": ["blue", "yellow"]
+        },
+        {
+            "name": "Butterfly Veil",
+            "description": "Modifies the active skill to immediately grant stealth and invincibility for a short period, summoning a Phantom Orb at her location.",
+            "detailedStats": {
+                "totalHealing": 50,
+                "invulnDuration": 2
+            },
+            "cost": ["blue", "yellow", "green", "green"]
+        },
+        {
+            "name": "Butterfly Armor",
+            "description": "Flavia gains temporary armor equivalent to a percentage of the DMG dealt to the Phantom Orb before it is depleted or destroyed.",
+            "detailedStats": {
+                "conversionRate": "???"
+            },
+            "cost": ["blue", "yellow", "yellow", "green"]
+        }
+    ]
+}

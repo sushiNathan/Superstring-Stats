@@ -1,0 +1,282 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/**Home Page**/
+.character-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.character-group {
+  padding: 15px;
+}
+
+.character-group-heading {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.character-group-heading h2 {
+  padding: 10px;
+}
+
+.character-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.character-icon {
+  border-style: solid;
+  border-color: #386cf4;
+  border-width: 5px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-urbino .character-icon {
+  border-color: #ffd13f;
+}
+
+.group-pus .character-icon {
+  border-color: #386cf4;
+}
+
+.group-scissors .character-icon {
+  border-color: #ff442e;
+}
+
+.character-icon img {
+  border-radius: 3% 3% 0 0;
+}
+
+.character-icon-label {
+  background-color: #eae8eb;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  border-radius: 0 0 5% 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.character-icon-label p {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.character-icon-label img {
+  height: 100%;
+  width: 20px;
+  filter: invert(32%) sepia(77%) saturate(3288%) hue-rotate(218deg) brightness(101%) contrast(91%);
+  padding: 0 5px;
+}
+
+/**Character and Weapon Stats**/
+.character-and-weapon-stats {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.character-stats, .weapon-stats {
+  display: flex;
+  flex-direction: row;
+  flex: 50%;
+  justify-content: space-around;
+  border: #555;
+  border-style: solid;
+}
+
+.character-stats .character-stats-section, .weapon-stats .weapon-stats-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stat-line .stat-label{
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/**Character Abilities**/
+
+.ability-icon, .ability-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-ability, .ability-details, .character-abilities{
+  display: flex;
+  flex-direction: row;
+}
+
+.character-ability {
+  flex: 30%;
+  padding: 20px;
+  border: #555;
+  border-style: solid;
+}
+
+.ability-icon {
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+}
+
+.character-ability .ability-name {
+  background-color: #555;
+}
+
+.ability-text, .ability-additional-details {
+  text-align: left;
+}
+
+/**Character Upgrades**/
+.character-upgrades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.character-upgrade-menu {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  border: #555;
+  border-style: solid;
+}
+
+.character-upgrade-menu.shrink {
+  height: 50%;
+}
+
+.character-upgrade-title {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, #555, #242424);
+}
+
+.character-upgrade-title p {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.character-upgrade-title .upgrade-icon-blue img {
+  border: #7c9aef;
+  border-style: solid;
+  border-radius: 5%;
+  background-color: #000;
+  height: 70px;
+  width: 70px;
+}
+
+.character-upgrade-title .upgrade-icon-yellow img {
+  border: #efcb5d;
+  border-style: solid;
+  border-radius: 50%;
+  background-color: #000;
+  height: 70px;
+  width: 70px;
+}
+
+.character-upgrade-title .upgrade-icon-green {
+  display: inline-block;
+  background-color: #a3f963;
+  box-sizing: border-box;
+  position: relative;
+  clip-path: polygon(5% 0, 95% 0, 100% 15%, 60% 100%, 40% 100%, 0 15%);
+  height: 80px;
+  width: 80px;
+}
+
+.character-upgrade-title .upgrade-icon-green span {
+  clip-path: polygon(5% 0, 95% 0, 100% 15%, 60% 100%, 40% 100%, 0 15%);
+  background-color: #000;
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 1px;
+  height: 70px;
+  width: 70px;
+}
+
+.character-upgrade-title .upgrade-icon-green img {
+  margin-top: 15%;
+  height: 60%;
+  width: 50%;
+}
+
+.character-upgrade:hover {
+  background-color: #555;
+  transition: 0.3s;
+}
+
+.character-upgrade p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.character-upgrade p span {
+  padding: 0 10px;
+}
+
+.blue-circle {
+  height: 15px;
+  width: 15px;
+  background-color: #7e9bf0;
+  border-radius: 10%;
+  display: inline-block;
+}
