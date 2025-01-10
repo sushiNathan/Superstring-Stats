@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PusIcon from '../assets/pus_logo.png';
 import FlaviaIcon from '../assets/character_portraits/flavia.png'
 import PlaceholderIcon from '../assets/character_portraits/placeholder.png'
