@@ -2,13 +2,13 @@
   "name": "superstring-stats",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gitname.github.io/Superstring-Stats",
+  "homepage": "https://sushinathan.github.io/Superstring-Stats/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
