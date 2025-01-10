@@ -7,7 +7,6 @@ import HomePage from './pages/home'
 import FlaviaPage from './pages/flavia'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
